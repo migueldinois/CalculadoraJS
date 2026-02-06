@@ -11,7 +11,17 @@ function Somar() {
     document.getElementById('resultado').style.display = 'flex';
 
     // Escrever o resultado no documento HTML, utilizando o template de strings (entre crase frase ${variável})
-    document.getElementById('resultado').textContent= `O resultado é ${v1 + v2}.`;    
+    const escreverCodigo =  document.getElementById('resultado')
+    escreverCodigo.innerHTML= `
+    <h2>Memórida de Cálculo</h2>
+    <ul>
+        <li>Operação: SOMA </li>
+        <li>Valor 01 digitado pelo usuário: ${v1}</li>
+        <li>Valor 02 digitado pelo usuário:${v2}</li>       
+        <li>O resultado da operação é ${v1} + ${v2} =   ${v1 + v2}</li>
+    </ul>
+    `;    
+    console.log(escreverCodigo)
 }
 
 function Subtrair() {
