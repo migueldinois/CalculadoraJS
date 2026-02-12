@@ -45,11 +45,12 @@ function calcPagVista() {
 };
 
 function mensagemResultado(numero_operacao, valor01, valor02){ 
-    console.log(numero_operacao)
-    if (numero_operacao[0] === 0) {
-        let conta = valor01 + valor02
+    
+    let conta = 0;
+    if (numero_operacao === 0) {
+        conta = valor01 + valor02;
     }
-
+    console.log(numero_operacao, conta)
     
     resultado.style.display = 'flex'
     resultado.innerHTML =
