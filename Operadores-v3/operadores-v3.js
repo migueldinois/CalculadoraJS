@@ -130,6 +130,9 @@ function Porcentagem(){
 
 };
 
+function CalcPagVista(){
+
+};
 
 
 function Limpar(){
